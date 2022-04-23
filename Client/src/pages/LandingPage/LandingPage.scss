@@ -1,0 +1,52 @@
+.landingpage{   
+    background:  url(../../assets/landingpage.jpg) ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+.landingpage__hero{
+    display: flex;
+    width: 60rem;
+    height: 35rem;
+    background: #ffffff26;
+    border-radius: 20px;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 30rem;
+}
+
+.p-text{
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width:1000px) {
+    .landingpage{
+        background: url(../../assets/landingpage2.jpg) ;
+        background-size: cover;
+    }
+    .landingpage__hero{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .logo{
+        width: 20rem;
+    }
+    .p-text{
+        font-size: 1.5rem;
+    }
+}

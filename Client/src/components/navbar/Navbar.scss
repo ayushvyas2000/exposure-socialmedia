@@ -1,0 +1,125 @@
+.navbar__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background: #000000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.247);
+}
+
+.navbar__brand{
+    margin-left: 15rem;
+    img{
+        width: 150px;
+        filter: invert(100%) sepia(99%) saturate(4%) hue-rotate(229deg) brightness(109%) contrast(99%);
+    }
+}
+
+.navbar__links{
+    margin-right: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+    p{
+        font-size: 1.2rem;
+        
+    }
+    svg{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+    }
+    div{
+        margin-left: 2rem;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.navbar__menu{
+    button{
+        color: white;
+        svg{
+            width: 30px;
+            height: 30px;
+            padding: 0 1rem;
+        }
+    }
+    @media screen and (min-width:1000px){
+        display: none;
+    }
+}
+
+.navbar__menu-expanded{
+    @media screen and (min-width:1000px){
+        display: none;
+    }
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(23, 23, 23);
+    z-index: 1000;
+    p{
+        font-size: 1.5rem;
+    }
+    div{
+        color: var(--primary-color);
+        margin: 0;
+        padding: 0;
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .close{
+        color: white;
+        svg{
+            padding: 1rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .navbar__header{
+        height: 50px;
+    }
+    .navbar__brand{
+        margin: 0;
+        padding: 0 1rem;
+        img{
+            width: 130px;
+            filter: invert(100%) sepia(99%) saturate(4%) hue-rotate(229deg) brightness(109%) contrast(99%);
+        }
+    }
+    .navbar__links{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:1000px){
+    .navbar__brand{
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .navbar__links{
+        margin: 0;
+        padding: 0 1rem;
+    }
+}

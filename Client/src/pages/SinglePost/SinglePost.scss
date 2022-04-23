@@ -1,0 +1,43 @@
+.single__post{
+    padding: 1rem;
+    border: solid 1px var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h1{
+        margin: 0.5rem 0;
+        
+    }
+    p{
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    button{
+        color: var(--primary-color);
+        position: absolute;
+        right: 0;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            margin: 0 0.5rem ;
+        }
+    }
+    img{
+        width: 70%;
+        margin: auto;
+        max-height: 600px;
+        object-fit: contain;
+    }
+}
+
